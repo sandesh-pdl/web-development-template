@@ -1,0 +1,164 @@
+:root {
+  --bg-color: #e7dfd8;
+  --font-color: #231f20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  list-style-type: none;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.container {
+  margin: 2rem 8rem;
+  background-color: var(--bg-color);
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  cursor: pointer;
+}
+
+.nav-bar ul li:hover {
+  opacity: 80%;
+}
+
+.bio-section {
+  height: 100vh;
+}
+
+.bio {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 2rem;
+  border: 2px solid var(--font-color);
+}
+
+.bio:hover {
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-upper-content h1 {
+  font-size: 55px;
+}
+
+.left-upper-content h2 {
+  font-size: 22px;
+}
+
+.left-upper-content p {
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+.left-lower-content {
+  margin-bottom: 1rem;
+}
+
+.left-lower-content ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+}
+
+.left-lower-content ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.left-lower-content ul li:hover {
+  opacity: 80%;
+}
+
+/* responsive */
+@media screen and (max-width: 450px) {
+  .container {
+    margin: 1rem;
+  }
+  .bio {
+    flex-flow: column;
+    max-width: 450px;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .left-content {
+    justify-content: space-between;
+  }
+
+  .left-upper-content h1 {
+    font-size: 35px;
+  }
+  .left-upper-content h2 {
+    font-size: 16px;
+  }
+
+  .left-upper-content p {
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 450px) {
+  .container {
+    margin: 2rem;
+  }
+  .bio {
+    flex-flow: column;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Project section */
+
+#project-section {
+  height: 100vh;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+}
+
+.project {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.project:hover {
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+.project h1 {
+  text-align: start;
+  font-size: 20px;
+}
+
+.project p {
+  font-size: 14px;
+  margin-top: 4px;
+}
